@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Shift Protocol</title>
+
+    <style>
+        /* 1. FUNDO */
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #17243b, #05070a);
+            color: #eaf5ff;
+            font-family: monospace;
+        }
+
+        /* 2. CABEÇALHO */
+        header {
+            padding: 18px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 12px #00f0ff;
+        }
+
+        header p {
+            color: #ff007f;
+            letter-spacing: 2px;
+        }
+
+        /* 3. CANVAS SEM ESCALA CSS */
+        #gm4html5_div_id {
+            position: relative;
+            width: 1366px;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            box-shadow:
+                0 0 0 2px #00f0ff,
+                0 0 25px #00f0ff40;
+        }
+
+        #canvas {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            touch-action: none;
+        }
+
+        /* 4. LOGIN DO GAMEMAKER */
+        div.gm4html5_login {
+            position: absolute;
+            padding: 20px;
+            border: 2px solid #00f0ff;
+            border-radius: 12px;
+            background: #121826;
+            color: #00ff88;
+        }
+
+        div.gm4html5_cancel_button {
+            float: right;
+        }
+
+        div.gm4html5_login_button {
+            float: left;
+        }
+
+        div.gm4html5_login_header {
+            text-align: center;
+        }
+
+        /* 5. RODAPÉ */
+        footer {
+            padding: 18px;
+            text-align: center;
+            color: #91a4bf;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>THE SHIFT PROTOCOL</h1>
+        <p>&gt;&gt; SYSTEM ONLINE &lt;&lt;</p>
+    </header>
+
+    <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <canvas id="canvas" width="1366" height="768">
+            <p>Seu navegador não suporta canvas HTML5.</p>
+        </canvas>
+    </div>
+
+    <footer>
+        A/D: mover • Espaço: pular • J: atirar
+    </footer>
+
+    <!-- Mesmo arquivo da sua exportação -->
+    <script
+        type="text/javascript"
+        src="html5game/Nome temporario.js?cachebust=1493838171">
+    </script>
+
+    <!-- Inicialização original -->
+    <script>
+        window.onload = GameMaker_Init;
+    </script>
+</body>
+</html>
